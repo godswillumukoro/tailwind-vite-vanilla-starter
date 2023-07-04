@@ -1,0 +1,17 @@
+{
+  "name": "page-1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently  \"npx tailwindcss -i ./globals.css -o ./dist/output.css --watch\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
